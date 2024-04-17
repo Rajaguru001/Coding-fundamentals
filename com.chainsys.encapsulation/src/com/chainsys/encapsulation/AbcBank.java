@@ -1,4 +1,5 @@
 package com.chainsys.encapsulation;
+
 import java.util.random.*;
 import java.util.*;
 import java.util.regex.*;
@@ -8,7 +9,7 @@ public class AbcBank {
 
 		BankDepositeForm bd = new BankDepositeForm();
 		Scanner sc = new Scanner(System.in);
-		Random ran=new Random();
+		Random ran = new Random();
 
 		System.out.print("Enter the Amount: ");
 		int amount = sc.nextInt();
@@ -17,7 +18,15 @@ public class AbcBank {
 			System.out.print("Enter the Correct amount: ");
 			amount = sc.nextInt();
 		}
+
 		bd.setAmount((amount));
+		// if(amount>20000) {
+		// rd.deposite(bd.getAmount());
+		// }
+		// else {
+		// b.deposite(bd.getAmount());
+
+		// }
 
 		System.out.print(":Enter Account Holder name: ");
 		String name = sc.next();
@@ -29,7 +38,7 @@ public class AbcBank {
 		bd.setName((name));
 
 		System.out.print("Enter Account number: ");
-	//	long accountnumber=ran.nextLong();
+
 		long accountnumber = sc.nextInt();
 		while (true) {
 			if (accountnumber > 0) {
@@ -72,10 +81,23 @@ public class AbcBank {
 
 		Bankdeposite rd = new Bankdeposite();
 
+		Classb b = new Classb();
+		if (amount < 10000) {
+			int incentives=5000;
+			int balance=10000;
+			amount=amount+incentives+balance;
+			b.deposite(bd.getAmount());
+		}
+
+		Goldloan gd = new Goldloan();
+
 		rd.deposite(bd.getAmount());
 		rd.deposite(bd.getName(), bd.getIfsc());
 		rd.deposite(bd.getName(), bd.getPancard(), bd.getPhonenumber());
 		rd.deposite(bd.getName(), bd.getIfsc(), bd.getPancard(), bd.getPhonenumber(), bd.getAccountnumber());
+
+		gd.deposite(amount);
+		
 
 	}
 
