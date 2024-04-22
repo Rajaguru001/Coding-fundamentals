@@ -2,6 +2,13 @@ package com.chainsys.encapsulation;
 
 public class Classb extends Bankdeposite {
 	public void deposite(int amount) {
+		
+		int balance = 10000;
+		int incentives=5000;
+
+		balance = amount + balance+incentives;
+	//	System.out.println("The Balance in your Account is: " + balance);
+
 	
 		
 		System.out.println("-------For Rural Area Scheme-----");
@@ -11,7 +18,7 @@ public class Classb extends Bankdeposite {
 
 	//	balance= amount + balance+ incentives;
 		
-		//System.out.println("The Balance in your Account is: " + balance);
+		System.out.println("The Balance in your Account is: " + balance);
 
 	}
 	}

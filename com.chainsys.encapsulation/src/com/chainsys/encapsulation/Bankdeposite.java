@@ -11,7 +11,7 @@ public class Bankdeposite {
 		int balance = 10000;
 
 		balance = amount + balance;
-		System.out.println("The Balance in your Account is: " + balance);
+	//	System.out.println("The Balance in your Account is: " + balance);
 
 	}
 
