@@ -86,7 +86,7 @@ public class ProductDetails {
 		System.out.println("please Enter Product Rating (0 to 5)");
 		double productrating=sc.nextDouble();
 		while(true) {
-		if(5>0) {
+		if(productrating>0) {
 			bp.setProductrating(productrating);
 			break;
 			
