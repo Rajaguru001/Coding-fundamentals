@@ -15,13 +15,16 @@ public class ProductDetails {
 		
 		System.out.println("Enter the Name of the Product: ");
 		String nameofproduct=sc.next();
+		while(true) {
 		if(nameofproduct.matches("^[a-zA-Z]+$")) {
 
 			bp.setNameofproduct(nameofproduct);
+			break;
 		}
 		else {
 			System.out.println("Enter Input in Alphabets (E.g)a-z & A-Z");
 			nameofproduct= sc.next();
+		}
 		}
 	
 		
@@ -31,13 +34,16 @@ public class ProductDetails {
 		
 		int costofproduct=sc.nextInt();
 		//validation
+		while(true) {
 		if(costofproduct>0) {
 			bp.setCostofproduct(costofproduct);
+			break;
 			
 		}
 		else {
 			System.out.println("Enter The value in positive Interger: ");
 			costofproduct=sc.nextInt();
+		}
 		}
 		
 		
@@ -46,14 +52,16 @@ public class ProductDetails {
 		
 		System.out.println("Enter The No.of.Users: ");
 		int noofusers=sc.nextInt();
-		//validation
+		while(true) {
 		if(noofusers>0) {
 			bp.setNoofusers(noofusers);
+			break;
 			
 		}
 		else {
 			System.out.println("Enter The value in positive Interger:");
 			noofusers=sc.nextInt();
+		}
 		}
 		
 		
@@ -61,28 +69,32 @@ public class ProductDetails {
 		
 		System.out.println("Enter The Warranty: ");
 		int noofwarranty=sc.nextInt();
-		//validation
+		while(true) {
 		if(noofwarranty>0) {
 			bp.setNoofwarranty(noofwarranty);
+			break;
 		}
 		else {
 			System.out.println("Enter The value in positive Interger: ");
 		}
+		}
 		
 		
 		
 		
 		
-		System.out.println("Enter the Product Rating");
+		System.out.println("please Enter Product Rating (0 to 5)");
 		double productrating=sc.nextDouble();
-		//validation
-		if(productrating>0) {
+		while(true) {
+		if(5>0) {
 			bp.setProductrating(productrating);
+			break;
 			
 		}
 		else {
 			System.out.println("Enter  The value in positive Interger: ");
 			productrating=sc.nextDouble();
+		}
 		}
 		
 		ProductForm pf=new ProductForm();
