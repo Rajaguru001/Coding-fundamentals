@@ -95,7 +95,7 @@ public class ProductDetails {
 		}
 
 		System.out.println("Your user ID:" + bp.getUsername());
-	//	System.out.println("Phone Number  :" + bp.getPhonenumber());
+		// System.out.println("Phone Number :" + bp.getPhonenumber());
 
 		System.out.println(" The Products Are ");
 		System.out.println("-------------------------------");
@@ -112,12 +112,22 @@ public class ProductDetails {
 				bp.setNameofproduct(nameofproduct.toLowerCase());
 				System.out.println("product: gps console");
 				pi.amazon(nameofproduct, 50000, "2M", 5, amazonwarrenty);
-				System.out.println("Warrenty : " + productwarranty(amazonwarrenty));
+
 				System.out.println("------------------------------------");
-				System.out.println("Thank you for purchasing our product");
-				System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
-				System.out.println("|Our Other Amazon products|");
-				System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+				System.out.println("do you want to purchase your product(yes/no)? ");
+			//	int n = totalcost(50000);
+			    String s=sc.next();
+			    if(s.equals("yes")) {
+			    	System.out.println("Thank you for purchasing our product");
+					System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+					System.out.println("Warrenty : " + productwarranty(amazonwarrenty));
+					System.out.println("|Our Other Maps are products|");
+					System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+			    }
+			    else {
+			    	System.out.println("Thanks for visit our product");
+			    }
+				
 				amazonwarrentyy();
 				b = false;
 				break;
@@ -126,9 +136,21 @@ public class ProductDetails {
 				bp.setNameofproduct(nameofproduct);
 				System.out.println("product: gaming console");
 				pi.flipkart(nameofproduct, 60000, "1.5M", 4.5, flipkartwarranty);
-				System.out.println("Warranty :" + productwarranty(flipkartwarranty));
-				System.out.println("------------------------------------");
-				System.out.println("Thank you for purchasing our product");
+				System.out.println("Do you want to purchase our product: ");
+				String gc=sc.next();
+				if(gc.equals("yes")) {
+					System.out.println("------------------------------------");
+					System.out.println("Thank you for purchasing our product");
+					System.out.println("Warranty :" + productwarranty(flipkartwarranty));
+					
+					System.out.println("|Our Other gaming setup are products|");
+					System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+					
+				}
+				else {
+					System.out.println("Thanks for visit our product");
+				}
+				
 				flipkartwarrentyy();
 				b = false;
 				break;
@@ -136,10 +158,22 @@ public class ProductDetails {
 				int ajio = 4;
 				bp.setNameofproduct(nameofproduct);
 				System.out.println("product: Smart Home Theater");
+				System.out.println("Do you want to purchase our product: ");
 				pi.Ajio(nameofproduct, 40000, "500k", 4, ajio);
-				System.out.println("Warranty: " + productwarranty(ajio));
-				System.out.println("------------------------------------");
-				System.out.println("Thank you for purchasing our product");
+				String hmt=sc.next();
+				if(hmt.equals("yes")) {
+					System.out.println("------------------------------------");
+					System.out.println("Thank you for purchasing our product");
+					System.out.println("Warranty: " + productwarranty(ajio));
+					System.out.println("|Our Other gaming setup are products|");
+					System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
+					
+				}
+				else {
+					System.out.println("Thanks for visit our product");
+				}
+				
+				
 				ajiowarrenty();
 				b = false;
 				break;
@@ -162,9 +196,9 @@ public class ProductDetails {
 				noofwarranty = scn.nextInt();
 			}
 		}
+
 		System.out.println("do have membership (yes/no)?");
 		String m = scn.next();
-		
 		System.out.println("----------------------------------------------");
 		System.out.println("*Congrats you have now 1 year !Extra warranty*");
 		if (m.equalsIgnoreCase("yes")) {
@@ -292,6 +326,18 @@ public class ProductDetails {
 		}
 
 		return ajiowarrenty();
+	}
+
+	public static int totalcost(int costofproduct) {
+		// System.out.println("your purchased amount is:"+costofproduct);
+		Scanner sc = new Scanner(System.in);
+		String n1 = sc.next();
+		if (n1.equals("yes")) {
+			return costofproduct;
+		} else {
+			return 0;
+		}
+
 	}
 
 }
