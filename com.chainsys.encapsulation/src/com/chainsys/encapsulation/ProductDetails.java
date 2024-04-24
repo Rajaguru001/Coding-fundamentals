@@ -121,7 +121,7 @@ public class ProductDetails {
 			    	System.out.println("Thank you for purchasing our product");
 					System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
 					System.out.println("Warrenty : " + productwarranty(amazonwarrenty));
-					System.out.println("|Our Other Maps are products|");
+					System.out.println("|Our Other Maps products|");
 					System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
 			    }
 			    else {
@@ -143,7 +143,7 @@ public class ProductDetails {
 					System.out.println("Thank you for purchasing our product");
 					System.out.println("Warranty :" + productwarranty(flipkartwarranty));
 					
-					System.out.println("|Our Other gaming setup are products|");
+					System.out.println("|Our Other gaming setup  products|");
 					System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
 					
 				}
@@ -165,7 +165,7 @@ public class ProductDetails {
 					System.out.println("------------------------------------");
 					System.out.println("Thank you for purchasing our product");
 					System.out.println("Warranty: " + productwarranty(ajio));
-					System.out.println("|Our Other gaming setup are products|");
+					System.out.println("|Our Other gaming setup products|");
 					System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
 					
 				}
