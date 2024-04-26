@@ -40,7 +40,7 @@ public class ProductSpecs {
 
 			case "navigator":
 				System.out.println("The cost is 15000");
-				System.out.println("Date of release:Next month");
+				System.out.println("No.of.Users: 12k");
 				System.out.println("pre Register: 20k");
 				System.out.println("Special discount for Members");
 				System.out.println("do you want to buy our product (Yes/No/exit):");
@@ -58,7 +58,7 @@ public class ProductSpecs {
 				break;
 			case "location finder":
 				System.out.println("The cost is 18000");
-				System.out.println("Date of release:Next month");
+				System.out.println("No.of.Users: 13k");
 				System.out.println("pre Register: 10k");
 				System.out.println("Special discount for Members");
 				System.out.println("do you want to buy our product (Yes/No/exit):");
@@ -74,7 +74,7 @@ public class ProductSpecs {
 				break;
 			case "smart way out":
 				System.out.println("The cost is 17000");
-				System.out.println("Date of release:Not yet confirmed");
+				System.out.println("No.of.Users: 15k");
 				System.out.println("pre Register:1k");
 				System.out.println("Special discount for Members");
 				System.out.println("do you want to buy our product (Yes/No/Exit):");
@@ -113,7 +113,7 @@ public class ProductSpecs {
 			switch (product2) {
 			case "gaming fps":
 				System.out.println("The cost is 20000");
-				System.out.println("Date of release:Next month");
+				System.out.println("No.of.Users: 1M");
 				System.out.println("pre Register: 21k");
 				System.out.println("Special discount for Members");
 				System.out.println("do you want to buy our product (Yes/No/exit):");
@@ -129,7 +129,7 @@ public class ProductSpecs {
 				break;
 			case "bluestack":
 				System.out.println("The cost is 10000");
-				System.out.println("Date of release:Next month");
+				System.out.println("No.of.Users: 1.5M");
 				System.out.println("pre Register: 12k");
 				System.out.println("Special discount for Members");
 				System.out.println("do you want to buy our product (Yes/No/exit):");
@@ -145,7 +145,7 @@ public class ProductSpecs {
 				break;
 			case "online games":
 				System.out.println("The cost is 25000");
-				System.out.println("Date of release:Not yet confirmed");
+				System.out.println("No.of.Users: 500 k");
 				System.out.println("pre Register:5k");
 				System.out.println("Special discount for Members");
 				System.out.println("do you want to buy our product (Yes/No/exit):");
